@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach LOOP</title>
+</head>
+<body>
+    
+</body>
+<script type = "text/javascript">
+    var cars = ["car1", "car2", "car3", "car4", "car5"];
+    cars.forEach(car);
+
+    function car(item,index,array){
+        array[index] = item + " modelA";
+        document.write(index + "--> " + item + "<br>");
+    }
+
+    cars.forEach(after);
+    function after(item,index){
+        document.write(index + "--> " + item + "<br>");
+    }
+</script>
+</html>
