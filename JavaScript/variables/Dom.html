@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript DOM Functions</title>
+</head>
+<body>
+    <div id="main">
+        Welcome to WsCubeTech
+    </div>
+    <div class="main">
+        Welcome Shivansh
+    </div>
+    <div class="main">
+        Welcome 
+    </div>
+</body>
+<script type = "text/javascript">
+    var x = document.getElementById("main");
+    console.log(x);
+    var y = document.getElementById("main").innerHTML;
+    console.log(y);
+    document.getElementById("main").innerHTML = "<h1>WsCubeTech</h1>";
+
+    var x = document.getElementsByClassName("main");
+    console.log(x);
+    var z = document.getElementsByClassName("main")[0].innerHTML;
+    alert(z);
+</script>
+</html>
